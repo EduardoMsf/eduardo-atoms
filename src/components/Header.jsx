@@ -2,7 +2,7 @@ import { CreditSimulator } from "./CreditSimulator"
 
 export const Header = () => {
   return (
-    <div className="header" style={{width:'100%'}}>
+    <div className="header clip-me" style={{width:'100%', backgroundImage: `url('https://res.cloudinary.com/dheyjds01/image/upload/v1666798714/atoms/bg_kzgrxi.jpg')`, backgroundRepeat:'no repeat', backgroundPosition: 'top right'}}>
       <div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
         <div style={{width:'200px'}}>
           <img src="https://res.cloudinary.com/dheyjds01/image/upload/v1666797756/atoms/clients-logo3_mzcrd2.png"/>

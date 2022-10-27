@@ -1,0 +1,7 @@
+body{
+  margin: auto;
+}
+
+.clip-me{
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 33% 100%, 0 round 50%);
+}

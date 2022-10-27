@@ -1,20 +1,25 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 
 export const CreditSimulator = () => {
-  const [cash, setCash] = useState(90000)
-  const [rate, setRate] = useState(8.9)
+  const [cash, setCash] = useState(10000)
+  const [rate, setRate] = useState(5)
+  const inputCashRef = useRef()
+  const inputRateRef = useRef()
+
   return (
-    <div>
+    <div style={{backgroundColor: 'white', borderRadius: '5px'}}>
       <div>
         <div>
           <h1>Simulador de crédito</h1>
-          <hr/>
+          <hr style={{width:'64px'}}/>
           <h4>Monto Deseado</h4>
-          <progress max='100000' value={cash}></progress>
+          <span>{cash}</span>
+          <input style={{width:'90%'}} ref={inputCashRef} type="range" name="" max="100000" min='10000'  step='1000' onInput={()=>setCash(inputCashRef.current.value)}/>
   
           <h4>Tasa anual</h4>
-          <progress max='100' value={rate}></progress>
+          <span>{rate}</span>
+          <input style={{width:'90%'}} ref={inputRateRef} type="range" name="" max="100" min='5' step='.1' onInput={()=>setRate(inputRateRef.current.value)}/>
         </div>
         <div>
             <h3>Plazo en meses</h3>
@@ -46,6 +51,9 @@ export const CreditSimulator = () => {
             <p>Cat</p>
             <span style={{textAlign:'center', border:'1px solid grey', width:'180px', height:'28px', borderRadius: '15px'}}>15.71%</span>
           </div>
+        </div>
+        <div>
+          <button>Solicitar mi crédito</button>
         </div>
       </div>
     </div>
