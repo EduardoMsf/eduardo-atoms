@@ -3,16 +3,16 @@ import { FeaturesItems } from "./FeaturesItems"
 
 export const Features = () => {
   return (
-    <div>
-      <h1 style={{textAlign:'center'}}>Features Designed for you</h1>
-      <hr style={{width:'64px'}}/>
+    <div className="features">
+      <h1 >Features Designed for you</h1>
+      <hr />
       <p>We belive we have created the most efficient SaaS landing page for your users. Landing page <br/>
         with features that will convince you to use it for your SaaS business.
       </p>
-      <div style={{display:'flex', flexWrap:'wrap', justifyContent:'space-evenly'}}>
+      <div className="features-items">
         {
           data.map( feature => (
-            <div  key={feature.id} style={{width:'350px'}}>
+            <div  key={feature.id}>
               <FeaturesItems iconUrl={feature.iconUrl} title={feature.title} text={feature.text}/>
             </div>
           ))

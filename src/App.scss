@@ -1,7 +1,195 @@
-body{
+body {
   margin: auto;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+.header {
+  width:'100%'; 
+  padding-top: 32px;
+  // background-image: url(https://res.cloudinary.com/dheyjds01/image/upload/v1666885950/atoms/header_bg_qc1kcj.svg);
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: 75rem;
 }
 
-.clip-me{
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 33% 100%, 0 round 50%);
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 200px;
+  }
+
+  .header-nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    ul{
+      display: flex;
+      list-style: none;
+
+      li {
+        margin-right: 32px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      color: black
+    }
+
+    a:hover{
+      color:rgb(46, 207, 207)
+    }
+
+    .btn {
+      background-color: transparent;
+      border-radius: 25px;
+      width: 160px;
+      font-size: 16px;
+      color: black;
+      border: 1px solid black;
+      margin: 0 12px;
+    }
+
+    .login {
+      border: 1px solid rgb(46, 207, 207);
+      color: rgb(46, 207, 207)
+    }
+  }
 }
+
+.header-content {
+  margin-top: 96px;
+  display: flex;
+
+  .header-info {
+    margin-right: 32px;
+
+    p {
+      color: rgb(138, 136, 136);
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    p:nth-child(3) {
+      color: rgb(46, 207, 207);
+      font-size: 20px;
+    }
+
+    span{
+      color:rgb(182,125,201);
+    }
+
+    span:nth-child(1) {
+      font-weight: bold;
+    }
+
+    .header-btn-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .btn-info {
+      background-color: transparent;
+      border-radius: 25px;
+      width: 220px;
+      font-size: 16px;
+      color: black;
+      font-weight: 700;
+      font-size: 18px;
+      height: 50px;
+    }
+
+    .demo{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: rgb(46, 207, 207);
+      
+      span {
+        color:white;
+      }
+    }
+
+    .start {
+      color:white;
+      background-color: rgb(182,125,201);
+    }
+  }
+}
+
+//Credit Simulator
+.credit {
+  width: 420px;
+  height: 750px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  h2{
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .credit-cash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+
+    span {
+      text-align: center;
+      border-radius: 25px;
+      width: 80px;
+      color: white;
+      background-color: rgb(182,125,201);
+    }
+
+    input[type="range"]{
+      background: rgb(182,125,201);
+    }
+  }
+
+}
+
+
+//Features
+.features {
+  h1 {
+    text-align: center;
+  }
+
+  hr{
+    width: 64px;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  .features-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    div{
+      width: 350px;
+      margin-top: 32px;
+      padding: 0px;
+    }
+  }
+}
+
+//background-image: url('https://res.cloudinary.com/dheyjds01/image/upload/v1666798714/atoms/bg_kzgrxi.jpg'); background-repeat: no repeat;
+// background-position: 'top right'
+
+// .clip-me {
+//   clip-path: polygon(75% 0%, 100% 0, 100% 100%, 75% 100%, 50% 50%);
+// }

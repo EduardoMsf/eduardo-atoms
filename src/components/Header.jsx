@@ -2,36 +2,38 @@ import { CreditSimulator } from "./CreditSimulator"
 
 export const Header = () => {
   return (
-    <div className="header clip-me" style={{width:'100%', backgroundImage: `url('https://res.cloudinary.com/dheyjds01/image/upload/v1666798714/atoms/bg_kzgrxi.jpg')`, backgroundRepeat:'no repeat', backgroundPosition: 'top right'}}>
-      <div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
-        <div style={{width:'200px'}}>
+    <div className="header" >
+      <div className="header-nav" >
+        <div>
           <img src="https://res.cloudinary.com/dheyjds01/image/upload/v1666797756/atoms/clients-logo3_mzcrd2.png"/>
         </div>
-        <div style={{display:'flex',width:'100%', justifyContent: 'space-evenly', alignItems:'center'}}>
+        <div className="header-nav__menu" >
           <div>
-            <ul style={{display:'flex', listStyle:'none'}}>
-              <li style={{margin: '32px'}}>HOME</li>
-              <li style={{margin: '32px'}}>FEATURES</li>
-              <li style={{margin: '32px'}}>PRICING</li>
-              <li style={{margin: '32px'}}>CONTACT</li>
+            <ul >
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">FEATURES</a></li>
+              <li><a href="#">PRICING</a></li>
+              <li><a href="#">CONTACT</a></li>
             </ul>
           </div>
           <div>
-            <button>LOGIN</button>
-            <button>GET STARTED</button>
+            <button className="btn login">LOGIN</button>
+            <button className="btn">GET STARTED</button>
           </div>
         </div>
       </div>
-      <div className="header-content" style={{display:'flex'}}>
-        <div className="header-info" style={{marginRight: '32px'}}>
+      <div className="header-content">
+        <div className="header-info">
           <h1>Build applications <span>faster</span></h1>
           <p>Hire experts & get your job done. The right IT security<br/>
             solutions. Protect your clients and computer systems from <br/>
             hackers and fight againts malware.
           </p>
           <p>For as low as <span>$0.95</span> per user account</p>
-          <button>Watch demo <img src='https://res.cloudinary.com/dheyjds01/image/upload/v1666798309/atoms/btn-play_mk2c2t.png'/></button>
-          <button>Start now</button>
+          <div className="header-btn-info">
+            <button className="btn-info demo"><span>Watch demo </span><img src='https://res.cloudinary.com/dheyjds01/image/upload/v1666798309/atoms/btn-play_mk2c2t.png'/></button>
+            <button className="btn-info start">Start now</button>
+          </div>
         </div>
         <CreditSimulator />
       </div>

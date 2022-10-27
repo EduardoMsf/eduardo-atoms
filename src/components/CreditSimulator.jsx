@@ -8,18 +8,21 @@ export const CreditSimulator = () => {
   const inputRateRef = useRef()
 
   return (
-    <div style={{backgroundColor: 'white', borderRadius: '5px'}}>
-      <div>
+    <div className="credit">
         <div>
-          <h1>Simulador de crédito</h1>
+          <h2>Simulador de crédito</h2>
           <hr style={{width:'64px'}}/>
-          <h4>Monto Deseado</h4>
-          <span>{cash}</span>
-          <input style={{width:'90%'}} ref={inputCashRef} type="range" name="" max="100000" min='10000'  step='1000' onInput={()=>setCash(inputCashRef.current.value)}/>
-  
-          <h4>Tasa anual</h4>
-          <span>{rate}</span>
+          <div className="credit-cash">
+            <span>{cash}</span>
+            <h5>Monto Deseado</h5>
+          </div>
+          <input style={{width:'90%', background:'rgb(182,125,201)'}} ref={inputCashRef} type="range" name="" max="100000" min='10000'  step='1000' onInput={()=>setCash(inputCashRef.current.value)}/>
+          <div className="credit-cash">
+            <span>{rate}</span>
+            <h5>Tasa anual</h5>
+          </div>
           <input style={{width:'90%'}} ref={inputRateRef} type="range" name="" max="100" min='5' step='.1' onInput={()=>setRate(inputRateRef.current.value)}/>
+
         </div>
         <div>
             <h3>Plazo en meses</h3>
@@ -54,8 +57,7 @@ export const CreditSimulator = () => {
         </div>
         <div>
           <button>Solicitar mi crédito</button>
-        </div>
-      </div>
+        </div>  
     </div>
   )
 }
