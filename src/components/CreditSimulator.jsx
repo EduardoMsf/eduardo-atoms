@@ -3,10 +3,40 @@ import { useEffect, useRef, useState } from "react"
 
 export const CreditSimulator = () => {
   const [cash, setCash] = useState(10000)
-  const [rate, setRate] = useState(50)
-  const [months, setMonths] = useState(0)
+  const [rate, setRate] = useState(8.9)
+  const [months, setMonths] = useState(12)
   const inputCashRef = useRef()
   const inputRateRef = useRef()
+  const [monthlyPayment, setMonthlyPayment] = useState(0)
+  const [ neto, setNeto] = useState(0)
+  const [ total, setTotal] = useState(0)
+  const commission = 348
+  const cat = 15.71
+
+  const getMonthlyPayment = () =>{
+    let cashMonthly = (cash / months) 
+    let rateToDec = rate / 100
+    let monthlyRate = cashMonthly * rateToDec
+    let aux = Math.round(monthlyRate)
+    setMonthlyPayment(Math.round(monthlyRate + cashMonthly))
+    setNeto(cash - commission)
+    setTotal(aux + cash + commission)
+  }
+
+  useEffect(() => {
+    getMonthlyPayment()
+    
+  }, [cash])
+
+  useEffect(() => {
+    getMonthlyPayment()
+    
+  }, [rate])
+
+  useEffect(() => {
+    getMonthlyPayment()
+  }, [months])
+  
 
   return (
     <div className="credit">
@@ -17,7 +47,7 @@ export const CreditSimulator = () => {
             <span>${cash}</span>
             <h5>Monto Deseado</h5>
           </div>
-          <input className="input-range" ref={inputCashRef} type="range" name="" max="100000" min='10000'  step='1000' onInput={()=>setCash(inputCashRef.current.value)}/>
+          <input className="input-range" ref={inputCashRef} type="range" name="" max="100000" min='10000'  step='1000' onInput={()=>setCash(parseInt(inputCashRef.current.value))}/>
           <div className="credit-cash">
             <span>{rate}%</span>
             <h5>Tasa anual</h5>
@@ -43,11 +73,11 @@ export const CreditSimulator = () => {
             <p>Cat</p>
           </div>
           <div className="credit-data">
-            <span >$880.67</span>
-            <span >$880.67</span>
-            <span >$880.67</span>
-            <span >$880.67</span>
-            <span >17%</span>
+            <span >${monthlyPayment}</span>
+            <span >${commission}</span>
+            <span >${neto}</span>
+            <span >${total}</span>
+            <span >{cat}%</span>
           </div>
         </div>
         <div className="credit-req-btn">
