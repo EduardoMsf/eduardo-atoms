@@ -3,24 +3,10 @@ import { useEffect, useRef, useState } from "react"
 
 export const CreditSimulator = () => {
   const [cash, setCash] = useState(10000)
-  const [rate, setRate] = useState(5)
+  const [rate, setRate] = useState(50)
   const [months, setMonths] = useState(0)
   const inputCashRef = useRef()
   const inputRateRef = useRef()
-  const buttonMonths12 = useRef()
-  const buttonMonths24 = useRef()
-  const buttonMonths36 = useRef()
-
-  const onHandleActive12 = () =>{
-    console.log(buttonMonths12.current.value)
-    console.log(buttonMonths24.current.value)
-    console.log(buttonMonths36.current.value)
-  }
-  const onHandleActive24 = () =>{
-  }
-  const onHandleActive36 = () =>{
-   
-  }
 
   return (
     <div className="credit">
@@ -61,7 +47,7 @@ export const CreditSimulator = () => {
             <span >$880.67</span>
             <span >$880.67</span>
             <span >$880.67</span>
-            <span >$880.67</span>
+            <span >17%</span>
           </div>
         </div>
         <div className="credit-req-btn">

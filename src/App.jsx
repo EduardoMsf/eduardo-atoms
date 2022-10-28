@@ -4,6 +4,8 @@ import './App.scss'
 import { Header } from './components/Header'
 import { Features } from './components/Features'
 import { CodeAPI } from './components/CodeAPI'
+import { Pricing } from './components/Pricing'
+import { Questions } from './components/Questions'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
       <Header />
       <Features />
       <CodeAPI />
+      <Pricing />
+      <Questions />
     </>
   )
 }
