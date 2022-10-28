@@ -6,7 +6,7 @@ export const Pricing = () => {
   const checkedPricing = 'https://res.cloudinary.com/dheyjds01/image/upload/v1666947615/atoms/checked-pricing_f13l5u.png'
   const checkedPricingWhite = 'https://res.cloudinary.com/dheyjds01/image/upload/v1666949016/atoms/checked-pricing-white_apj4al.png'
   return (
-    <div className="pricing">
+    <div className="pricing" id="pricing">
       <h1>Flexible Pricing</h1>
       <hr/>
       <p>We belive we have created the most efficient SaaS landing page for your users. Landing page <br/>

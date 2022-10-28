@@ -11,9 +11,9 @@ export const Header = () => {
           <div>
             <ul >
               <li><a href="#">HOME</a></li>
-              <li><a href="#">FEATURES</a></li>
-              <li><a href="#">PRICING</a></li>
-              <li><a href="#">CONTACT</a></li>
+              <li><a href="#features">FEATURES</a></li>
+              <li><a href="#pricing">PRICING</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
           <div>

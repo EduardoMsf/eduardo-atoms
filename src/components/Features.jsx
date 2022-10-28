@@ -3,7 +3,7 @@ import { FeaturesItems } from "./FeaturesItems"
 
 export const Features = () => {
   return (
-    <div className="features">
+    <div className="features" id='features'>
       <h1 >Features Designed for you</h1>
       <hr />
       <p>We belive we have created the most efficient SaaS landing page for your users. Landing page <br/>
