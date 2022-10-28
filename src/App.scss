@@ -1,7 +1,5 @@
 body {
   margin: auto;
-  margin-left: 64px;
-  margin-right: 64px;
 }
 .header {
   width:'100%'; 
@@ -129,7 +127,7 @@ body {
 //Credit Simulator
 .credit {
   width: 420px;
-  height: 750px;
+  height: 720px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
@@ -152,8 +150,125 @@ body {
       background-color: rgb(182,125,201);
     }
 
-    input[type="range"]{
-      background: rgb(182,125,201);
+  }
+
+  .input-range{
+    background: rgb(182,125,201);
+    width: 90%;
+    margin: 0 5%;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .input-range:hover {
+    opacity: 1;
+  }
+
+  .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(182,125,201);
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) rgb(182,125,201);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .input-range::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(182,125,201);
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background: url(https://www.flaticon.com/svg/vstatic/svg/59/59089.svg?token=exp=1614064733~hmac=a6f0cce2214fdb52e7df9eec24006427) rgb(182,125,201);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .credit-months {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto
+  }
+
+  .credit-months-btn {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgb(182,125,201);
+  }
+
+  .credit-months-btn:hover {
+    background-color: rgb(182,125,201);
+    color: white;
+  }
+
+  .credit-simulator {
+    display: flex;
+
+    .credit-concepts {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      text-align: right;
+
+      p {
+        margin-right: 4px;
+        line-height: 8px;
+        margin-top: 16px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .credit-data {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      text-align: left;
+      margin-left: 32px;
+
+      span {
+        margin-top: 11px;
+        text-align: center;
+        border: 1px solid grey;
+        width: 120px;
+        height: 24px;
+        border-radius: 15px;
+      }
+    }
+    
+  }
+  .credit-req-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+
+    button {
+      border-radius: 25px;
+      width: 220px;
+      font-size: 16px;
+      height: 50px;
+      color:white;
+      background-color: rgb(182,125,201);
     }
   }
 
@@ -181,9 +296,103 @@ body {
 
     div{
       width: 350px;
-      margin-top: 32px;
+      margin-top: 16px;
       padding: 0px;
+
+      span {
+        color: rgb(138, 136, 136);
+      }
+      
+      p {
+        text-align: left;
+      }
     }
+  }
+}
+
+//CodeAPI
+.code-api {
+  background-color: rgb(224, 222, 222);
+  height: 720px;
+  h1 {
+    text-align: center;
+    padding-top: 56px;
+  }
+
+  hr{
+    width: 64px;
+  }
+
+  p{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  code {
+    color: blue;
+
+    span {
+      color: rgb(182,125,201);
+    }
+  }
+
+  .code-api-nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 56px 0 -8px 50%;
+    gap: 48px;
+
+    button {
+      background-color: transparent;
+      color: grey;
+      outline: none;
+      text-decoration: none;
+    }
+
+    button:hover{
+      color: black;
+      border-radius: 0px;
+      border-bottom:3px solid rgb(163, 96, 185);
+      border-top: 1px solid rgb(224, 222, 222);
+      border-left: 1px solid rgb(224, 222, 222);
+      border-right: 1px solid rgb(224, 222, 222);
+    }
+
+  }
+
+  .code-api-container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+
+    pre {
+      margin: 0 auto;
+    }
+  }
+
+  .code-api-btn-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: lightgrey;
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+  }
+
+  .code-api-btn{
+    background-color: rgb(46, 207, 207);
+    border-radius: 25px;
+    width: 220px;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    margin-right: 16px;
+  }
+  .example-btn {
+    background-color: rgb(182,125,201);
   }
 }
 

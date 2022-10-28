@@ -13,7 +13,7 @@ export const Features = () => {
         {
           data.map( feature => (
             <div  key={feature.id}>
-              <FeaturesItems iconUrl={feature.iconUrl} title={feature.title} text={feature.text}/>
+              <FeaturesItems iconUrl={feature.iconUrl} title={feature.title} text={feature.text} span={feature.span}/>
             </div>
           ))
         }
