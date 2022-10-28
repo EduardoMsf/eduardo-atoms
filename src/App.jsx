@@ -6,6 +6,7 @@ import { Features } from './components/Features'
 import { CodeAPI } from './components/CodeAPI'
 import { Pricing } from './components/Pricing'
 import { Questions } from './components/Questions'
+import { Services } from './components/Services'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <CodeAPI />
       <Pricing />
       <Questions />
+      <Services />
     </>
   )
 }

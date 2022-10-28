@@ -575,10 +575,128 @@ body {
 }
 
 //Questions
+.questions {
+  display: flex;
+  margin-top: 64px;
 
+  .questions-container{
+    width: 40%;
+    padding-right: 72px;
+    padding-left: 72px;
+
+    h2{
+      font-weight: bold;
+    }
+    p {
+      color: rgb(138, 136, 136)
+    }
+  }
+
+  .questions-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
+    p {
+      color: black;
+    }
+  }
+
+  .questions-accordion{
+    width: 40%;
+  }
+}
+
+
+//Services
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  width: 100%;
+  
+  .services-card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+}
+
+.services-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(244,244,244);
+  margin: 0 72px;
+  height: 28  0px;
+  border-radius: 5px;
+  padding: 32px;
+
+  hr {
+    width: 64px;
+    margin: 0;
+  }
+
+  button {
+    border-radius: 25px;
+    background-color: rgb(163, 96, 185);
+    width: 220px;
+    color: white;
+    font-size: 18px;
+    height: 32px;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.services-card-sales{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(46, 207, 207);
+  margin: 0 72px;
+  height: 280px;
+  border-radius: 5px;
+  padding: 32px;
+  color: white;
+
+
+  hr {
+    width: 120px;
+    margin: 0;
+    background-color: lightgray;
+  }
+
+  button {
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 220px;
+    color: white;
+    font-size: 18px;
+    height: 32px;
+    margin-right: 16px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.services-sponsors {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 64px;
+}
 //background-image: url('https://res.cloudinary.com/dheyjds01/image/upload/v1666798714/atoms/bg_kzgrxi.jpg'); background-repeat: no repeat;
 // background-position: 'top right'
-
+//background-color: rgb(224, 222, 222);
 // .clip-me {
 //   clip-path: polygon(75% 0%, 100% 0, 100% 100%, 75% 100%, 50% 50%);
 // }

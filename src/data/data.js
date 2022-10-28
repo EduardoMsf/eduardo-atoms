@@ -42,3 +42,36 @@ export const data = [
     text: 'Easy to navigate. Made with user experience in mind, in order to provide the perfect landing page experience for your client.'
   },
 ]
+
+export const items = [
+  {
+    id: 1,
+    heading: 'Installing the app on all devices',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+  {
+    id: 2,
+    heading: 'How to implement and manage the API key',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+  {
+    id: 3,
+    heading: 'How to set up and optimize your account',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+  {
+    id: 4,
+    heading: 'Manage your account access and security settings',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+  {
+    id: 5,
+    heading: 'API integrations basic overview',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+  {
+    id: 6,
+    heading: 'Deactivating or deleting your account',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis molestie nibh, a viverra ex. Aliquam nec justo eget eros pharetra iaculis in in mauris. Fusce vitae nulla est. Duis tristique a lorem ut feugiat. Proin libero ipsum, auctor in mi vel, luctus tristique turpis. Vivamus auctor dui orci, quis porta nisl iaculis at. Ut neque tellus, suscipit id velit at, cursus dignissim augue.'
+  },
+]
